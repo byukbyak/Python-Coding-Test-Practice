@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 # min()함수 이용
 # n, m을 공백으로 구분하여 입력받기
 n, m = map(int, input().split())
