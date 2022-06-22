@@ -15,7 +15,6 @@ def findTopLeft(eatable_queue, n):
         X = tmp[0] // n #?
         Y = tmp[0] % n #?
 
-
 def isAvailable(x, y, arr, size, n, history): # 이동이 가능한지 여부
     if 0 <= x < n and 0 <= y < n:
         if history[x][y] != 1: # 이미 이전에 방문한 곳, 다시 돌아올 이유는 없다
@@ -62,6 +61,7 @@ def solve():
                 start = (i, j)
                 break
         arr.append(line) # 세로
+        
     result = 0
     size = 2 # 상어 크기 (먹은 횟수와 같아지면 +1)
     count = 0 # 먹은 횟수
