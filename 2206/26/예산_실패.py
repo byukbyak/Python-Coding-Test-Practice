@@ -9,3 +9,7 @@ def solution(d, budget):
             d.pop(0)
             count += 1
         return count
+
+# 실패 분석
+# 1. sum(d)를 할때마다 시간복잡도가 증가한다.
+# 2. 신청한 부서가 통과할 때 budget이 감소되어야하는걸 간과했다.
